@@ -1,0 +1,23 @@
+@model Zealand_Eksamen.Models.Class
+@{
+    ViewData["Title"] = "Rediger Hold";
+}
+<h2>Rediger Hold</h2>
+
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="ClassID" />
+    <div class="mb-3">
+        <label class="form-label">Holdkode</label>
+        <input class="form-control" asp-for="ClassCode" />
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Semester</label>
+        <input class="form-control" asp-for="Semester" />
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Program</label>
+        <input class="form-control" asp-for="Programme" />
+    </div>
+    <button type="submit" class="btn btn-primary">Gem</button>
+    <a class="btn btn-secondary" href="@Url.Action("Index")">Annuller</a>
+</form>

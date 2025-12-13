@@ -1,0 +1,26 @@
+@model Zealand_Eksamen.Models.Employee
+@{
+    ViewData["Title"] = "Opret Medarbejder";
+}
+<h2>Opret Medarbejder</h2>
+
+<form asp-action="Create" method="post">
+    <div class="mb-3">
+        <label class="form-label">Fulde navn</label>
+        <input class="form-control" asp-for="FullName" />
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Email</label>
+        <input class="form-control" asp-for="Email" />
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Rolle</label>
+        <input class="form-control" asp-for="Role" />
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Afdeling</label>
+        <input class="form-control" asp-for="Department" />
+    </div>
+    <button type="submit" class="btn btn-primary">Gem</button>
+    <a class="btn btn-secondary" href="@Url.Action("Index")">Annuller</a>
+</form>

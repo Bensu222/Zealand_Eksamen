@@ -1,0 +1,45 @@
+@model Zealand_Eksamen.Models.ExamAssignment
+@{
+    var exam = ViewBag.Exam as Zealand_Eksamen.Models.Exam;
+    ViewData["Title"] = "Tildel Medarbejder";
+}
+<h2>Tildel Medarbejder til @exam?.ExamName</h2>
+
+<form asp-action="Create" method="post">
+    <input type="hidden" asp-for="ExamID" />
+    <div class="mb-3">
+        <label class="form-label">Medarbejder</label>
+        <select class="form-select" asp-for="EmployeeID" asp-items="ViewBag.Employees"></select>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Rolle i eksamen</label>
+        <input class="form-control" asp-for="RoleInExam" placeholder="Eksaminator / Censor" />
+    </div>
+    <button type="submit" class="btn btn-primary">Gem</button>
+    <a class="btn btn-secondary" href="@Url.Action("ByExam", new { examId = exam?.ExamID })">Annuller</a>
+</form>
+
+@section Scripts {
+    <script>
+        (function(){
+            const employeeSelect = document.getElementById('EmployeeID');
+            const roleInput = document.getElementById('RoleInExam');
+
+            async function fetchAndFillRole() {
+                const id = employeeSelect.value;
+                if (!id) { roleInput.value = ''; return; }
+                try {
+                    const res = await fetch(`/api/Employees/${id}`);
+                    if (!res.ok) { return; }
+                    const emp = await res.json();
+                    // API returns camelCase by default
+                    roleInput.value = emp?.role ?? '';
+                } catch (_) { /* ignore */ }
+            }
+
+            employeeSelect.addEventListener('change', fetchAndFillRole);
+            // Initialize on load
+            fetchAndFillRole();
+        })();
+    </script>
+}

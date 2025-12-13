@@ -1,0 +1,13 @@
+@model Zealand_Eksamen.Models.Exam
+@{
+    ViewData["Title"] = "Slet Eksamen";
+}
+<h2>Slet Eksamen</h2>
+
+<div class="alert alert-danger">Er du sikker på, at du vil slette @Model.ExamName?</div>
+
+<form asp-action="Delete" method="post">
+    <input type="hidden" asp-for="ExamID" />
+    <button class="btn btn-danger" type="submit">Slet</button>
+    <a class="btn btn-secondary" href="@Url.Action("Index")">Annuller</a>
+</form>

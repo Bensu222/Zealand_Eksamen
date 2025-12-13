@@ -1,0 +1,43 @@
+@model IEnumerable<Zealand_Eksamen.Models.Employee>
+@{
+    ViewData["Title"] = "Medarbejdere";
+}
+<h2>Medarbejdere</h2>
+<form class="row g-2 mb-3" method="get" asp-action="Index">
+    <div class="col-sm-8 col-md-6 col-lg-4">
+        <input type="text" class="form-control" name="q" value="@((string)ViewBag.Query ?? "")" placeholder="Søg efter navn eller email" />
+    </div>
+    <div class="col-auto">
+        <button type="submit" class="btn btn-primary">Søg</button>
+        <a class="btn btn-outline-secondary" href="@Url.Action("Index")">Ryd</a>
+    </div>
+</form>
+<p>
+    <a class="btn btn-primary" href="@Url.Action("Create")">Opret Medarbejder</a>
+</p>
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th>Fulde navn</th>
+        <th>Email</th>
+        <th>Rolle</th>
+        <th>Afdeling</th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var e in Model)
+    {
+        <tr>
+            <td>@e.FullName</td>
+            <td>@e.Email</td>
+            <td>@e.Role</td>
+            <td>@e.Department</td>
+            <td>
+                <a class="btn btn-sm btn-secondary" href="@Url.Action("Edit", new { id = e.EmployeeID })">Rediger</a>
+                <a class="btn btn-sm btn-outline-danger" href="@Url.Action("Delete", new { id = e.EmployeeID })">Slet</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

@@ -1,0 +1,67 @@
+@model Zealand_Eksamen.Models.Exam
+@{
+    ViewData["Title"] = "Rediger Eksamen";
+}
+<h2>Rediger Eksamen</h2>
+
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="ExamID" />
+    <div class="row">
+        <div class="col-md-6">
+            <div class="mb-3">
+                <label class="form-label">Eksamensnavn</label>
+                <input class="form-control" asp-for="ExamName" />
+                <span asp-validation-for="ExamName" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Eksamens type</label>
+                <select class="form-select" asp-for="ExamTypeID" asp-items="ViewBag.ExamTypes">
+                    <option value="">-- Vælg Eksamens Type --</option>
+                </select>
+            </div>
+            <div class="form-check mb-3">
+                <input class="form-check-input" asp-for="HasSupervision" />
+                <label class="form-check-label">Med tilsyn</label>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Estimeret antal studerende</label>
+                <input class="form-control" asp-for="EstimatedStudents" type="number" />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Censor type (Intern/Ekstern)</label>
+                <input class="form-control" asp-for="CensorType" placeholder="Intern eller Ekstern" />
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="mb-3">
+                <label class="form-label">Hold <span class="text-danger">*</span></label>
+                <select class="form-select" asp-for="ClassID" asp-items="ViewBag.Classes">
+                    <option value="0">-- Vælg Hold --</option>
+                </select>
+                <span asp-validation-for="ClassID" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Afleveringsdato til ordinær eksamen</label>
+                <input class="form-control" asp-for="OrdinaryDeliveryDate" type="date" />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Ordinær eksamen startdato</label>
+                <input class="form-control" asp-for="OrdinaryStartDate" type="date" />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Ordinær eksamen slutdato</label>
+                <input class="form-control" asp-for="OrdinaryEndDate" type="date" />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Afleveringsdato til reeksamen</label>
+                <input class="form-control" asp-for="ReexamDeliveryDate" type="date" />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Reeksamensdato</label>
+                <input class="form-control" asp-for="ReexamDate" type="date" />
+            </div>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Gem</button>
+    <a class="btn btn-secondary" href="@Url.Action("Index")">Annuller</a>
+</form>

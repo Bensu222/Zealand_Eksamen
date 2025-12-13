@@ -1,0 +1,72 @@
+@{
+    ViewData["Title"] = "Velkommen";
+}
+
+<style>
+    .hero {
+        position: relative;
+        min-height: 60vh;
+        border-radius: 1rem;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        background: linear-gradient(135deg, rgba(25,118,210,0.85), rgba(0,0,0,0.6)),
+                    url('https://images.unsplash.com/photo-1529078155058-5d716f45d604?q=80&w=1600&auto=format&fit=crop');
+        background-size: cover;
+        background-position: center;
+        box-shadow: 0 1rem 2rem rgba(0,0,0,0.2);
+    }
+    .hero-content { text-align: center; padding: 3rem; }
+    .hero h1 { font-weight: 700; font-size: clamp(2rem, 5vw, 3.5rem); }
+    .hero p { font-size: 1.125rem; opacity: 0.95; }
+    .quick-links .card { transition: transform .2s ease, box-shadow .2s ease; }
+    .quick-links .card:hover { transform: translateY(-4px); box-shadow: 0 .75rem 1.5rem rgba(0,0,0,.15); }
+    .btn-cta { padding: .75rem 1.25rem; font-weight: 600; }
+    @@media (max-width: 576px) { .hero { min-height: 50vh; } }
+</style>
+
+<div class="hero mb-5">
+    <div class="hero-content">
+        <h1>Zealand Eksamensplanlægning</h1>
+        <p>Planlæg eksamener, undgå overlap og hold skemaer klare for hold og personale.</p>
+        <div class="mt-3">
+            <a class="btn btn-light btn-cta me-2" asp-controller="ClassesPage" asp-action="Index">Administrer Hold</a>
+            <a class="btn btn-outline-light btn-cta me-2" asp-controller="ExamsPage" asp-action="Index">Administrer Eksamener</a>
+            <a class="btn btn-outline-light btn-cta" asp-controller="Schedule" asp-action="Employees">Se Skemaer</a>
+        </div>
+    </div>
+    
+    
+</div>
+
+<div class="quick-links row g-4">
+    <div class="col-md-4">
+        <div class="card h-100">
+            <div class="card-body">
+                <h5 class="card-title">Medarbejdere</h5>
+                <p class="card-text">Registrer lærere og interne sensorer, der deltager ved eksamener.</p>
+                <a class="btn btn-primary" asp-controller="EmployeesPage" asp-action="Index">Åbn Medarbejdere</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card h-100">
+            <div class="card-body">
+                <h5 class="card-title">Hold</h5>
+                <p class="card-text">Administrer hold med program- og semestrinformation.</p>
+                <a class="btn btn-primary" asp-controller="ClassesPage" asp-action="Index">Åbn Hold</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card h-100">
+            <div class="card-body">
+                <h5 class="card-title">Skemaer</h5>
+                <p class="card-text">Se medarbejder- og holdskemaer med advarsler om overlap.</p>
+                <a class="btn btn-primary" asp-controller="Schedule" asp-action="Employees">Åbn Skemaer</a>
+            </div>
+        </div>
+    </div>
+</div>

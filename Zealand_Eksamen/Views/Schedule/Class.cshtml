@@ -1,0 +1,39 @@
+@model IEnumerable<Zealand_Eksamen.Models.Exam>
+@{
+    ViewData["Title"] = "Holdskema";
+    var overlaps = ViewBag.Overlaps as List<(DateOnly day, int count)> ?? new();
+}
+<h2>Holdskema (@ViewBag.ClassId)</h2>
+
+@if (overlaps.Any())
+{
+    <div class="alert alert-warning">
+        Overlap registreret på:
+        <ul>
+            @foreach (var o in overlaps)
+            {
+                <li>@o.day: @o.count eksamener</li>
+            }
+        </ul>
+    </div>
+}
+
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th>Eksamen</th>
+        <th>Start</th>
+        <th>Slut</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var e in Model)
+    {
+        <tr>
+            <td>@e.ExamName</td>
+            <td>@e.OrdinaryStartDate?.ToShortDateString()</td>
+            <td>@e.OrdinaryEndDate?.ToShortDateString()</td>
+        </tr>
+    }
+    </tbody>
+</table>

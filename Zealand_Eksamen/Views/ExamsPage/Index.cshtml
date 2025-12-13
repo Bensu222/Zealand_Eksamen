@@ -1,0 +1,58 @@
+@model IEnumerable<Zealand_Eksamen.Models.Exam>
+@{
+    ViewData["Title"] = "Eksamener";
+}
+<h2>Eksamener</h2>
+<form class="row g-2 mb-3" method="get" asp-action="Index">
+    <div class="col-sm-6 col-md-4">
+        <input type="text" class="form-control" name="q" value="@((string)ViewBag.Query ?? "")" placeholder="Søg efter eksamensnavn" />
+    </div>
+    <div class="col-sm-6 col-md-4">
+        <input type="text" class="form-control" name="classCode" value="@((string)ViewBag.ClassCode ?? "")" placeholder="Søg efter holdkode" />
+    </div>
+    <div class="w-100 d-block d-md-none"></div>
+    <div class="col-sm-6 col-md-2">
+        <input type="date" class="form-control" name="from" value="@((string)ViewBag.From ?? "")" />
+    </div>
+    <div class="col-sm-6 col-md-2">
+        <input type="date" class="form-control" name="to" value="@((string)ViewBag.To ?? "")" />
+    </div>
+    <div class="col-auto">
+        <button type="submit" class="btn btn-primary">Søg</button>
+        <a class="btn btn-outline-secondary" href="@Url.Action("Index")">Ryd</a>
+    </div>
+</form>
+<p>
+    <a class="btn btn-primary" href="@Url.Action("Create")">Opret Eksamen</a>
+    <a class="btn btn-outline-secondary" href="@Url.Action("Index", "ClassesPage")">Gå til Hold</a>
+    <a class="btn btn-outline-secondary" href="@Url.Action("Index", "EmployeesPage")">Gå til Medarbejdere</a>
+ </p>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Navn</th>
+            <th>Hold</th>
+            <th>Type</th>
+            <th>Start</th>
+            <th>Slut</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var e in Model)
+    {
+        <tr>
+            <td>@e.ExamName</td>
+            <td>@e.Class?.ClassCode</td>
+            <td>@e.ExamType?.TypeName</td>
+            <td>@e.OrdinaryStartDate?.ToShortDateString()</td>
+            <td>@e.OrdinaryEndDate?.ToShortDateString()</td>
+            <td>
+                <a class="btn btn-sm btn-secondary" href="@Url.Action("Edit", new { id = e.ExamID })">Rediger</a>
+                <a class="btn btn-sm btn-outline-danger" href="@Url.Action("Delete", new { id = e.ExamID })">Slet</a>
+                <a class="btn btn-sm btn-outline-primary" href="@Url.Action("ByExam", "ExamAssignmentsPage", new { examId = e.ExamID })">Administrer Tildelinger</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+    </table>

@@ -1,0 +1,13 @@
+@model Zealand_Eksamen.Models.ExamAssignment
+@{
+    ViewData["Title"] = "Fjern Tildeling";
+}
+<h2>Fjern Tildeling</h2>
+
+<div class="alert alert-danger">Er du sikker på, at du vil fjerne @Model.Employee.FullName fra @Model.Exam.ExamName?</div>
+
+<form asp-action="Delete" method="post">
+    <input type="hidden" asp-for="ExamAssignmentID" />
+    <button class="btn btn-danger" type="submit">Fjern</button>
+    <a class="btn btn-secondary" href="@Url.Action("ByExam", new { examId = Model.ExamID })">Annuller</a>
+</form>

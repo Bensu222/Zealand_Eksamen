@@ -1,0 +1,33 @@
+@model IEnumerable<Zealand_Eksamen.Models.ExamAssignment>
+@{
+    var exam = ViewBag.Exam as Zealand_Eksamen.Models.Exam;
+    ViewData["Title"] = "Tildelinger for " + (exam?.ExamName ?? "Eksamen");
+}
+<h2>Tildelinger for @exam?.ExamName (@exam?.Class?.ClassCode)</h2>
+
+<p>
+    <a class="btn btn-primary" href="@Url.Action("Create", new { examId = exam?.ExamID })">Tildel Medarbejder</a>
+    <a class="btn btn-secondary" href="@Url.Action("Index", "ExamsPage")">Tilbage til Eksamener</a>
+</p>
+
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th>Medarbejder</th>
+        <th>Rolle i eksamen</th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var a in Model)
+    {
+        <tr>
+            <td>@a.Employee.FullName</td>
+            <td>@a.RoleInExam</td>
+            <td>
+                <a class="btn btn-sm btn-outline-danger" href="@Url.Action("Delete", new { id = a.ExamAssignmentID })">Fjern</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

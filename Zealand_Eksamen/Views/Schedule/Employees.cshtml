@@ -1,0 +1,50 @@
+@model IEnumerable<Zealand_Eksamen.Models.Employee>
+@{
+    ViewData["Title"] = "Alle Medarbejderes Skemaer";
+}
+<h2>Alle Medarbejdere - Eksamensskemaer</h2>
+
+@foreach (var emp in Model)
+{
+    <div class="card mb-4">
+        <div class="card-header d-flex justify-content-between align-items-center">
+            <div>
+                <strong>@emp.FullName</strong>
+                <span class="text-muted">(@emp.Role)</span>
+            </div>
+            <a class="btn btn-sm btn-outline-primary" href="@Url.Action("Employee", new { id = emp.EmployeeID })">Åbn personligt skema</a>
+        </div>
+        <div class="card-body p-0">
+            <table class="table mb-0">
+                <thead>
+                <tr>
+                    <th>Eksamen</th>
+                    <th>Hold</th>
+                    <th>Start</th>
+                    <th>Slut</th>
+                </tr>
+                </thead>
+                <tbody>
+                @if (emp.ExamAssignments.Any())
+                {
+                    foreach (var a in emp.ExamAssignments)
+                    {
+                        <tr>
+                            <td>@a.Exam.ExamName</td>
+                            <td>@a.Exam.Class.ClassCode</td>
+                            <td>@a.Exam.OrdinaryStartDate?.ToShortDateString()</td>
+                            <td>@a.Exam.OrdinaryEndDate?.ToShortDateString()</td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <td colspan="4" class="text-muted">Ingen eksamener tildelt.</td>
+                    </tr>
+                }
+                </tbody>
+            </table>
+        </div>
+    </div>
+}
