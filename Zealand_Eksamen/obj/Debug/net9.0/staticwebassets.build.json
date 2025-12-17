@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "mnDm7upvd6iaZJK9w1/YHCXTF2zqTLQ/XvUjyhP3s20=",
+  "Hash": "msbbvgaQHhKJ6EY2sV9c1O85gO7wkqlzk+e28m6qMHA=",
   "Source": "Zealand_Eksamen",
   "BasePath": "_content/Zealand_Eksamen",
   "Mode": "Default",
@@ -206,12 +206,12 @@
       "OriginalItemSpec": "/Users/bensuyuksel/Downloads/Zealand_Eksamen/Zealand_Eksamen/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map"
     },
     {
-      "Identity": "/Users/bensuyuksel/Downloads/Zealand_Eksamen/Zealand_Eksamen/obj/Debug/net9.0/compressed/5zgxvxdohc-lugek5hnai.gz",
+      "Identity": "/Users/bensuyuksel/Downloads/Zealand_Eksamen/Zealand_Eksamen/obj/Debug/net9.0/compressed/5zgxvxdohc-x48mfzz98p.gz",
       "SourceId": "Zealand_Eksamen",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/bensuyuksel/Downloads/Zealand_Eksamen/Zealand_Eksamen/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/Zealand_Eksamen",
-      "RelativePath": "css/site#[.{fingerprint=lugek5hnai}]?.css.gz",
+      "RelativePath": "css/site#[.{fingerprint=x48mfzz98p}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -220,8 +220,8 @@
       "RelatedAsset": "/Users/bensuyuksel/Downloads/Zealand_Eksamen/Zealand_Eksamen/wwwroot/css/site.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "q6gmzad525",
-      "Integrity": "cnac8l+68P1TRZrUyEVkzCTs+ui0xW7hn4msjCOgadQ=",
+      "Fingerprint": "nad5pb8lk3",
+      "Integrity": "cajyQeAi3qG6900l0rfruTPtIS+ICzffNx3B+xY7NV0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/bensuyuksel/Downloads/Zealand_Eksamen/Zealand_Eksamen/wwwroot/css/site.css"
@@ -1417,8 +1417,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "lugek5hnai",
-      "Integrity": "zeR5PHeeHbxfGkL8WV86OzdoF6UnjuCmnagaocD+cbo=",
+      "Fingerprint": "x48mfzz98p",
+      "Integrity": "T+I/+g+FZB6V0svUvyIfOeTkHH9MQ90atI7X66aO5yY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/css/site.css"
@@ -2729,12 +2729,12 @@
   "Endpoints": [
     {
       "Route": "css/site.css",
-      "AssetFile": "/Users/bensuyuksel/Downloads/Zealand_Eksamen/Zealand_Eksamen/obj/Debug/net9.0/compressed/5zgxvxdohc-lugek5hnai.gz",
+      "AssetFile": "/Users/bensuyuksel/Downloads/Zealand_Eksamen/Zealand_Eksamen/obj/Debug/net9.0/compressed/5zgxvxdohc-x48mfzz98p.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.003194888179"
+          "Quality": "0.001396648045"
         }
       ],
       "ResponseHeaders": [
@@ -2744,15 +2744,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "312"
+          "Value": "715"
         },
         {
           "Name": "ETag",
-          "Value": "\"cnac8l+68P1TRZrUyEVkzCTs+ui0xW7hn4msjCOgadQ=\""
+          "Value": "\"cajyQeAi3qG6900l0rfruTPtIS+ICzffNx3B+xY7NV0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 13 Dec 2025 22:14:57 GMT"
+          "Value": "Wed, 17 Dec 2025 18:34:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2772,13 +2772,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"zeR5PHeeHbxfGkL8WV86OzdoF6UnjuCmnagaocD+cbo=\""
+          "Value": "W/\"T+I/+g+FZB6V0svUvyIfOeTkHH9MQ90atI7X66aO5yY=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-zeR5PHeeHbxfGkL8WV86OzdoF6UnjuCmnagaocD+cbo="
+          "Value": "sha256-T+I/+g+FZB6V0svUvyIfOeTkHH9MQ90atI7X66aO5yY="
         }
       ]
     },
@@ -2793,7 +2793,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "637"
+          "Value": "1739"
         },
         {
           "Name": "Content-Type",
@@ -2801,11 +2801,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"zeR5PHeeHbxfGkL8WV86OzdoF6UnjuCmnagaocD+cbo=\""
+          "Value": "\"T+I/+g+FZB6V0svUvyIfOeTkHH9MQ90atI7X66aO5yY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 13 Dec 2025 22:14:57 GMT"
+          "Value": "Wed, 17 Dec 2025 18:34:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2815,13 +2815,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-zeR5PHeeHbxfGkL8WV86OzdoF6UnjuCmnagaocD+cbo="
+          "Value": "sha256-T+I/+g+FZB6V0svUvyIfOeTkHH9MQ90atI7X66aO5yY="
         }
       ]
     },
     {
       "Route": "css/site.css.gz",
-      "AssetFile": "/Users/bensuyuksel/Downloads/Zealand_Eksamen/Zealand_Eksamen/obj/Debug/net9.0/compressed/5zgxvxdohc-lugek5hnai.gz",
+      "AssetFile": "/Users/bensuyuksel/Downloads/Zealand_Eksamen/Zealand_Eksamen/obj/Debug/net9.0/compressed/5zgxvxdohc-x48mfzz98p.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2830,7 +2830,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "312"
+          "Value": "715"
         },
         {
           "Name": "Content-Type",
@@ -2838,11 +2838,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"cnac8l+68P1TRZrUyEVkzCTs+ui0xW7hn4msjCOgadQ=\""
+          "Value": "\"cajyQeAi3qG6900l0rfruTPtIS+ICzffNx3B+xY7NV0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 13 Dec 2025 22:14:57 GMT"
+          "Value": "Wed, 17 Dec 2025 18:34:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2860,18 +2860,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-cnac8l+68P1TRZrUyEVkzCTs+ui0xW7hn4msjCOgadQ="
+          "Value": "sha256-cajyQeAi3qG6900l0rfruTPtIS+ICzffNx3B+xY7NV0="
         }
       ]
     },
     {
-      "Route": "css/site.lugek5hnai.css",
-      "AssetFile": "/Users/bensuyuksel/Downloads/Zealand_Eksamen/Zealand_Eksamen/obj/Debug/net9.0/compressed/5zgxvxdohc-lugek5hnai.gz",
+      "Route": "css/site.x48mfzz98p.css",
+      "AssetFile": "/Users/bensuyuksel/Downloads/Zealand_Eksamen/Zealand_Eksamen/obj/Debug/net9.0/compressed/5zgxvxdohc-x48mfzz98p.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.003194888179"
+          "Quality": "0.001396648045"
         }
       ],
       "ResponseHeaders": [
@@ -2881,15 +2881,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "312"
+          "Value": "715"
         },
         {
           "Name": "ETag",
-          "Value": "\"cnac8l+68P1TRZrUyEVkzCTs+ui0xW7hn4msjCOgadQ=\""
+          "Value": "\"cajyQeAi3qG6900l0rfruTPtIS+ICzffNx3B+xY7NV0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 13 Dec 2025 22:14:57 GMT"
+          "Value": "Wed, 17 Dec 2025 18:34:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2909,13 +2909,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"zeR5PHeeHbxfGkL8WV86OzdoF6UnjuCmnagaocD+cbo=\""
+          "Value": "W/\"T+I/+g+FZB6V0svUvyIfOeTkHH9MQ90atI7X66aO5yY=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "lugek5hnai"
+          "Value": "x48mfzz98p"
         },
         {
           "Name": "label",
@@ -2923,12 +2923,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-zeR5PHeeHbxfGkL8WV86OzdoF6UnjuCmnagaocD+cbo="
+          "Value": "sha256-T+I/+g+FZB6V0svUvyIfOeTkHH9MQ90atI7X66aO5yY="
         }
       ]
     },
     {
-      "Route": "css/site.lugek5hnai.css",
+      "Route": "css/site.x48mfzz98p.css",
       "AssetFile": "/Users/bensuyuksel/Downloads/Zealand_Eksamen/Zealand_Eksamen/wwwroot/css/site.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -2938,7 +2938,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "637"
+          "Value": "1739"
         },
         {
           "Name": "Content-Type",
@@ -2946,11 +2946,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"zeR5PHeeHbxfGkL8WV86OzdoF6UnjuCmnagaocD+cbo=\""
+          "Value": "\"T+I/+g+FZB6V0svUvyIfOeTkHH9MQ90atI7X66aO5yY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 13 Dec 2025 22:14:57 GMT"
+          "Value": "Wed, 17 Dec 2025 18:34:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2960,7 +2960,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "lugek5hnai"
+          "Value": "x48mfzz98p"
         },
         {
           "Name": "label",
@@ -2968,13 +2968,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-zeR5PHeeHbxfGkL8WV86OzdoF6UnjuCmnagaocD+cbo="
+          "Value": "sha256-T+I/+g+FZB6V0svUvyIfOeTkHH9MQ90atI7X66aO5yY="
         }
       ]
     },
     {
-      "Route": "css/site.lugek5hnai.css.gz",
-      "AssetFile": "/Users/bensuyuksel/Downloads/Zealand_Eksamen/Zealand_Eksamen/obj/Debug/net9.0/compressed/5zgxvxdohc-lugek5hnai.gz",
+      "Route": "css/site.x48mfzz98p.css.gz",
+      "AssetFile": "/Users/bensuyuksel/Downloads/Zealand_Eksamen/Zealand_Eksamen/obj/Debug/net9.0/compressed/5zgxvxdohc-x48mfzz98p.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2983,7 +2983,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "312"
+          "Value": "715"
         },
         {
           "Name": "Content-Type",
@@ -2991,11 +2991,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"cnac8l+68P1TRZrUyEVkzCTs+ui0xW7hn4msjCOgadQ=\""
+          "Value": "\"cajyQeAi3qG6900l0rfruTPtIS+ICzffNx3B+xY7NV0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 13 Dec 2025 22:14:57 GMT"
+          "Value": "Wed, 17 Dec 2025 18:34:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3013,7 +3013,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "lugek5hnai"
+          "Value": "x48mfzz98p"
         },
         {
           "Name": "label",
@@ -3021,7 +3021,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-cnac8l+68P1TRZrUyEVkzCTs+ui0xW7hn4msjCOgadQ="
+          "Value": "sha256-cajyQeAi3qG6900l0rfruTPtIS+ICzffNx3B+xY7NV0="
         }
       ]
     },

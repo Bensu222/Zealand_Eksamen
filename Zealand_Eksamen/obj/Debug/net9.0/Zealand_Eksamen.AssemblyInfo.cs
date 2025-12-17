@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Zealand_Eksamen")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7532229354f4e6420a5b846467f08d46b216a20e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0ac498786fd696fa7480c7ed85db2ee169b69a0a")]
 [assembly: System.Reflection.AssemblyProductAttribute("Zealand_Eksamen")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Zealand_Eksamen")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

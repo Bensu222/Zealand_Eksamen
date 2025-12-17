@@ -12,18 +12,18 @@ public ClassesPageController(ApplicationDbContext context)
 {
 _context = context;
 }
-public async Task<IActionResult> Index(string? q)
+public IActionResult Index()
 {
-    var query = _context.Classes.AsNoTracking().AsQueryable();
-    if (!string.IsNullOrWhiteSpace(q))
+    var items = new List<Class>
     {
-        var term = q.Trim();
-        query = query.Where(c => c.ClassCode.Contains(term));
-    }
-ViewBag.Query = q;
-var items = await query.ToListAsync();
-return View(items);
+        new Class { ClassID = 1, ClassCode = "DAT1A" },
+        new Class { ClassID = 2, ClassCode = "DAT1B" },
+        new Class { ClassID = 3, ClassCode = "DAT2A" }
+    };
+
+    return View(items);
 }
+                
 public IActionResult Create()
 {
 return View(new Class());
@@ -75,6 +75,3 @@ public async Task<IActionResult> DeleteConfirmed(int id)
 }
 
 
-
-
-    

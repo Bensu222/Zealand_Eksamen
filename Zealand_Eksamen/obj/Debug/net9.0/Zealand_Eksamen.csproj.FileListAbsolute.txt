@@ -202,7 +202,6 @@ C:/Users/MadsFletcherIversen/Documents/Ny/Zealand_Eksamenn-main/Zealand_Eksamen/
 /Users/bensuyuksel/Downloads/Zealand_Eksamen/Zealand_Eksamen/obj/Debug/net9.0/scopedcss/Pages/Shared/_Layout.cshtml.rz.scp.css
 /Users/bensuyuksel/Downloads/Zealand_Eksamen/Zealand_Eksamen/obj/Debug/net9.0/scopedcss/bundle/Zealand_Eksamen.styles.css
 /Users/bensuyuksel/Downloads/Zealand_Eksamen/Zealand_Eksamen/obj/Debug/net9.0/scopedcss/projectbundle/Zealand_Eksamen.bundle.scp.css
-/Users/bensuyuksel/Downloads/Zealand_Eksamen/Zealand_Eksamen/obj/Debug/net9.0/compressed/5zgxvxdohc-lugek5hnai.gz
 /Users/bensuyuksel/Downloads/Zealand_Eksamen/Zealand_Eksamen/obj/Debug/net9.0/compressed/rne0mtgauw-61n19gt1b8.gz
 /Users/bensuyuksel/Downloads/Zealand_Eksamen/Zealand_Eksamen/obj/Debug/net9.0/compressed/f0mb14ai69-fr7q2aak1r.gz
 /Users/bensuyuksel/Downloads/Zealand_Eksamen/Zealand_Eksamen/obj/Debug/net9.0/compressed/y9fx89f8zn-bqjiyaj88i.gz
@@ -281,3 +280,5 @@ C:/Users/MadsFletcherIversen/Documents/Ny/Zealand_Eksamenn-main/Zealand_Eksamen/
 /Users/bensuyuksel/Downloads/Zealand_Eksamen/Zealand_Eksamen/obj/Debug/net9.0/Zealand_Eksamen.pdb
 /Users/bensuyuksel/Downloads/Zealand_Eksamen/Zealand_Eksamen/obj/Debug/net9.0/Zealand_Eksamen.genruntimeconfig.cache
 /Users/bensuyuksel/Downloads/Zealand_Eksamen/Zealand_Eksamen/obj/Debug/net9.0/ref/Zealand_Eksamen.dll
+/Users/bensuyuksel/Downloads/Zealand_Eksamen/Zealand_Eksamen/obj/Debug/net9.0/Zealand_Eksamen.sourcelink.json
+/Users/bensuyuksel/Downloads/Zealand_Eksamen/Zealand_Eksamen/obj/Debug/net9.0/compressed/5zgxvxdohc-x48mfzz98p.gz

@@ -29,3 +29,77 @@ body {
 .form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
   text-align: start;
 }
+
+a:hover {
+    color: #333333;
+}
+/* ===== MOODLE STYLE: GUL + SORT ===== */
+
+/* Generelt */
+body {
+background-color: #F0F7FF; /* hvid */
+color: #000000; /* sort tekst */
+}
+/* Navbar /toppen) */
+.navbar {
+background-color: rgba(255, 200, 0, 0.49) !important;
+}
+.navbar-brand,  
+.navbar-nav .nav-link {
+color: #000000 !important;
+font-weight: 600;
+}
+
+/* HERO / JUMBOTRON / HEADER */
+header,
+.hero,
+.jumbotron,
+.bg-primary {
+background: #FFD700 !important;
+color: #000000 !important;
+}
+
+/* Fjern blå overlay/gradient */
+header::before,
+.hero::before {
+display: none !important;
+}
+
+/* Tekst i hero */
+header h1,
+header h2,
+header p {
+color: #000000 !important;
+}
+
+/* Knapper */
+.btn,
+.btn-primary,
+.btn-outline-primary {
+background-color: #FFD700 !important;
+border: 2px solid #000000 !important;
+color: #000000 !important;
+font-weight: 600;
+}
+.btn:hover {
+background-color: #e6c200 !important;
+}
+
+/* Cards (bokse nederst) */
+.card {
+background-color: #FFD700;
+border: 1px solid #000000;
+color: #000000;
+}
+
+/* Links */
+a {
+color: #000000;
+}
+a:hover {
+color: #333333;
+}
+
+.navbar {
+background-color: #FFD700 !important;
+}
